@@ -1,0 +1,2 @@
+# Cambiar puertos a 443
+iptables -t nat -I PREROUTING -d <server ip> -p tcp --dport 443 -j DNAT --to-destination <server ip>:8006
