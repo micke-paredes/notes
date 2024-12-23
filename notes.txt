@@ -1,2 +1,12 @@
 # Cambiar puertos a 443
 iptables -t nat -I PREROUTING -d <server ip> -p tcp --dport 443 -j DNAT --to-destination <server ip>:8006
+
+# Windows 10 u 11 Mine
+JN2M6-YYPV4-26BHB-KHW4B-43KTT
+
+# Office 2021 Mine
+BY8N4-HQXBW-P8HQ7-C2TF8-VH9JK
+
+# Windows 10 no used yet
+NPG6W-978V7-33MQP-3JPQJ-D9MP6
+NMBM6-VB972-3K4H6-HCWQJ-TQ726
