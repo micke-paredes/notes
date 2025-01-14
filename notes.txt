@@ -10,3 +10,7 @@ BY8N4-HQXBW-P8HQ7-C2TF8-VH9JK
 # Windows 10 no used yet
 NPG6W-978V7-33MQP-3JPQJ-D9MP6
 NMBM6-VB972-3K4H6-HCWQJ-TQ726
+# Agregar certificados de confianza
+echo | openssl s_client -connect DOMAIN_NAME:443 -servername DOMAIN_NAME 2>/dev/null | openssl x509 -outform PEM > CERT_NAME.crt
+sudo cp CERT_NAME.crt /usr/local/share/ca-certificates/
+sudo update-ca-certificates
